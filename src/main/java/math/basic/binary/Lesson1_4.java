@@ -9,4 +9,18 @@ package math.basic.binary;
  * @Version : 1.0
  **/
 public class Lesson1_4 {
+
+    static public void Transform_to_Binary(int decimal) {
+        if(decimal==0)
+            return;
+        else {
+            Transform_to_Binary(decimal/2);
+            System.out.print(decimal%2);
+        }
+    }
+
+    public static void main(String[] args) {
+        Transform_to_Binary(10);
+    }
+
 }
